@@ -26,7 +26,7 @@ const greeting = {
     "A passionate Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / Nodejs and some other cool libraries and frameworks. I am currently diving into the world of Machine Learning and have participated in developing different models."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1r7Fyn7mIdmI4Xm_tuRhp4ct0rR6RhEyj/view?usp=sharing", // Set to empty to hide the button
+    "https://docs.google.com/document/d/1G8c6f5UCIFfTBcKWjhOhiABKddKjF7XM/edit?usp=sharing&ouid=112092320798090242317&rtpof=true&sd=true", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
