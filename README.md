@@ -2,7 +2,7 @@
 
 This is my personal portfolio website built using **React** and **Tailwind CSS**, showcasing my projects, experience, and technical skills.
 
-🔗 **Live Site:** [rohank-portfolio.s3-website-us-east-1.amazonaws.com](http://rohank-portfolio.s3-website-us-east-1.amazonaws.com)
+🔗 **Live Site:** [Portfolio](http://rohank-portfolio.s3-website-us-east-1.amazonaws.com)
 
 ## 🚀 Features
 
