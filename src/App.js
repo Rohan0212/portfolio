@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
+import Projects from "./pages/Projects";
+import Home from "./pages/Home";
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  // Apply theme to HTML root
+  useEffect(() => {
+    const root = window.document.documentElement;
+    if (theme === "dark") {
+      root.classList.add("dark");
+    } else {
+      root.classList.remove("dark");
+    }
+  }, [theme]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen px-6 py-4 bg-white text-black dark:bg-gray-900 dark:text-white transition-colors duration-300">
+        <Routes>
+          <Route
+            path="/"
+            element={<Home theme={theme} setTheme={setTheme} />}
+          />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
